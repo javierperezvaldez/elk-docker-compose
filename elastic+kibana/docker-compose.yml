@@ -5,7 +5,7 @@ services:
     container_name: elasticsearch
     ports: ['9200:9200']
     volumes:
-      - ./es_data:/usr/share/elasticsearch/data
+      - ./../config/es_data:/usr/share/elasticsearch/data
     environment:
       - node.name=elasticsearch
       - cluster.initial_master_nodes=elasticsearch
